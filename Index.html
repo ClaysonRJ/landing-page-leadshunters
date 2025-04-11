@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Leads Hunters</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet" />
+        <link rel="icon" href="img/fav_icon.png" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <div id="header-conteudo">
+                <div id="logo">
+                    <a href="#banner">
+                        <div class="img logo">
+                            <img src="img/Logo_v4_REFINADO.png" width="35%" height="35%" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="letras">
+                            <h1 class="leads">LEADS</h1>
+                            <h1 class="hunters">HUNTERS</h1>
+                        </div>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#nossos-servicos">Nossos Serviços</a></li>
+                        <li><a>Quem somos</a></li>
+                        <li><a>Diferenciais</a></li>
+                        <li><a href="#formulario" >Consultoria Grátis</a></li>
+                    </ul>
+                    <input type="button" class="peca-uma-avaliacao" value="Whatsapp" onclick="scrollParaFormulario()" />
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <div class="banner" id="banner">
+            <div class="site-conteudo-banner">
+                <div class="esquerdo">
+                    <h1 class="geral-titulo-secao">
+                        Da Estratégia ao Resultado:
+                        <span class="alternador-wrapper gradiente-texto">
+                            <span class="alternador-texto">
+                                <span class="gradiente-texto">Marketing Digital</span>
+                                <span class="gradiente-texto">Tráfego Pago</span>
+                                <span class="gradiente-texto">Tráfego Orgânico</span>
+                                <span class="gradiente-texto">Comunicação Visual</span>
+                                <span class="gradiente-texto">Marketing</span>
+                            </span>
+                        </span>
+                        <br />Voltado Para Performance
+                    </h1>
+                    <!--  <p class="descritivo">Agencia de marketing digital</p>
+                    <hr />
+                     <p class="subtitulo">
+                        Nada de pacotes prontos. Nossas estratégias são personalizadas para o seu negócio, seja ele
+                        pequeno, médio ou grande.
+                    </p> -->
+                    <input
+                        type="button"
+                        class="link-formulario"
+                        value="Agende uma conversa"
+                        onclick="scrollParaFormulario()" />
+                </div>
+                <div class="direito">
+                    <!--<div class="container">
+                        <div class="mira-cruz"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="site-conteudo">
+            <div class="titulo-secao" id="nossos-servicos">
+                <h2>Soluções que Convertem</h2>
+                <p class="subtitulo-secao">
+                    Conheça as soluções que impulsionam negócios com inteligência, tecnologia e criatividade.
+                </p>
+            </div>
+            <section class="nossos-servicos">
+                <article class="orientação-normal">
+                    <div class="esquerdo-conteudo">
+                        <img src="img/Trafego%20pago.png" class="img-nossos-servicos" />
+                    </div>
+                    <div class="direito-conteudo">
+                        <h3>Tráfego Pago que Gera Vendas, Não Só Cliques</h3>
+                        <p>
+                            Executamos campanhas de tráfego pago com foco em performance real. Atuamos nas maiores
+                            plataformas: Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads e Native Ads (Taboola).
+                        </p>
+
+                        <p>
+                            Nada de vaidade, só resultado. Tráfego pago para quem quer vender mais, escalar e dominar o
+                            digital.
+                        </p>
+                        <input
+                            type="button"
+                            class="link-formulario"
+                            value="Agende uma conversa"
+                            onclick="scrollParaFormulario()" />
+                    </div>
+                </article>
+                <article class="orientação-invertida">
+                    <div class="esquerdo-conteudo">
+                        <img src="img/Consultoria%20de%20Marketing.png" class="img-nossos-servicos" />
+                    </div>
+                    <div class="direito-conteudo">
+                        <h3>Consultoria de Marketing Digital</h3>
+                        <p>
+                            Diagnóstico estratégico e plano de ação sob medida. Analisamos seu nicho, público e metas
+                            para acelerar seu crescimento online com foco em conversão e posicionamento de marca.
+                        </p>
+                        <p>Clique no botão e tenha uma avaliação gratuita com nossos especialistas</p>
+                        <input
+                            type="button"
+                            class="link-formulario"
+                            value="Consultoria Gratuita"
+                            onclick="scrollParaFormulario()" />
+                    </div>
+                </article>
+                <article class="orientação-normal">
+                    <div class="esquerdo-conteudo">
+                        <img src="img/Criacao%20de%20sites.png" class="img-nossos-servicos" />
+                    </div>
+                    <div class="direito-conteudo">
+                        <h3>Sites inteligentes, otimizados e prontos para vender</h3>
+                        <p>
+                            Criamos sites de alta performance, otimizados para SEO e com foco total em conversão.
+                            Estratégias orgânicas combinadas com automações e integrações inteligentes garantem
+                            resultados em campanhas.
+                        </p>
+
+                        <p>
+                            Tecnologia de ponta, com integração a CRMs, chatbots e fluxos automatizados que trabalham
+                            24/7 para gerar leads e aumentar suas vendas — mesmo quando você estiver offline.
+                        </p>
+                        <input
+                            type="button"
+                            class="link-formulario"
+                            value="Agende uma conversa"
+                            onclick="scrollParaFormulario()" />
+                    </div>
+                </article>
+                <article class="orientação-invertida">
+                    <div class="esquerdo-conteudo">
+                        <img src="img/Designer%20gr%C3%A1fico.png" class="img-nossos-servicos" />
+                    </div>
+                    <div class="direito-conteudo">
+                        <h3>Criatividade Alinhada com Conversão</h3>
+                        <p>
+                            Designs que vendem. Criamos peças impactantes e profissionais para redes sociais, anúncios e
+                            campanhas. Tudo alinhado à sua identidade visual com foco em performance e conversão.
+                        </p>
+                        <input
+                            type="button"
+                            class="link-formulario"
+                            value="Agende uma conversa"
+                            onclick="scrollParaFormulario()" />
+                    </div>
+                </article>
+            </section>
+            <div class="formulario-img">
+                <div class="titulo-secao-form">
+                    <h2>Converse com um Especialista</h2>
+                    <p class="subtitulo-secao">
+                        Entre em contato, solicite uma consultoria gratuita e descubra muitas oportunidades!
+                    </p>
+                </div>
+                <section class="formulario">
+                    <form class="form-box" id="formulario" onsubmit="enviarFormulario">
+                        <fieldset class="linha">
+                            <div class="nome">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" required />
+                            </div>
+                            <div class="empresa">
+                                <label for="empresa">Empresa</label>
+                                <input type="text" id="empresa" required />
+                            </div>
+                        </fieldset>
+                        <fieldset class="linha">
+                            <div class="telefone">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" required />
+                            </div>
+                            <div class="nome">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                        </fieldset>
+                        <fieldset class="botao-form">
+                            <button type="submit" class="link-formulario">Enviar</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

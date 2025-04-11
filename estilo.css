@@ -1,0 +1,507 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    scroll-behavior: smooth; /* os links de ancoras das paginas levarão de forma suave */
+    font-family: "poppins";
+}
+
+/*EXPLICANDO O CODIGO
+ * 
+ * VH e VW: foi usado pois ele define o tamanho da fonte e de quadros de acordo com a porcentagem do tamanho da tela, por exemplo
+ * 
+ * Se a altura for de 1000 px e eu escolher um VH de 5, eu escolhi um tamanho de 5% do tamanho atual da tela, ou seja,
+ * independente do tamanho da tela o objeto ocupara sempre 5%.
+ * 
+ * O mesmo serve para a largura. se a largura for de 1000px e eu escolher um VW de 5, será 5% da tela em qualquer tamanho.
+ * 
+ * A MELHOR ESCOLHA FOI TRATAR TUDO COM VW (DIMINUI TANTO QUANTO ESTICA OU COMPRIMI HORIZONTAL OU VERTICALMENTE
+ * 
+ * 
+ * 
+ */
+:root {
+    --cor-primaria: #470337;
+    --cor-secundaria: #7a045f;
+    --cor-terciaria: #b37b59;
+    --cor-quartenaria: #79473d;
+    --cor-quinaria: #daa530;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+::selection {
+    background-color: #7a045f; /* Cor de fundo da seleção */
+    color: #ffffff; /* Cor do texto selecionado */
+}
+body {
+    background-color: black;
+}
+
+/* GERAL- CONFIGURAÇÕES GERAIS DA ÁREA DE CONTEUDO DO SITE */
+
+.site-conteudo {
+    width: 85%;
+    margin: 0 auto;
+}
+#clear {
+    clear: both;
+}
+.geral-titulo-secao {
+    font-size: 4vw;
+}
+/* HEADER DO SITE */
+
+#header-conteudo {
+    width: 80%;
+    height: 5.7vw;
+    padding-top: 0.6vw;
+    margin: 0 auto;
+}
+
+header {
+    background-color: RGB(0, 0, 0, 0.3);
+    height: 5.7vw;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
+
+#logo {
+    float: left;
+    width: 16%;
+    height: 12%;
+}
+#logo .letras {
+    align-content: center;
+    text-align: left;
+    padding-top: 0.6vw; /* VH é uma medida de % em relação ao tamanho da altura da tela */
+    line-height: 1.8vw;
+    font-size: 1vw; /* VW é uma medida de % em relação ao tamanho da largura da tela */
+}
+#logo img {
+    float: left;
+}
+#logo h1.leads {
+    float: left;
+    font-family: "poppins";
+    font-optical-sizing: auto;
+    font-weight: 900;
+    color: var(--cor-terciaria);
+}
+#logo h1.hunters {
+    float: left;
+    font-family: "sora";
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+    color: var(--cor-terciaria);
+}
+nav {
+    float: right;
+    color: white;
+    margin: 0 auto;
+    padding-top: 1.3vw;
+    z-index: 10;
+    width: 57vw;
+}
+
+#header-conteudo ul {
+    list-style: none;
+    float: left;
+}
+#header-conteudo li {
+    padding: 0vw 2vw;
+    font-family: "poppins";
+    font-size: 1vw;
+    color: var(--cor-terciaria);
+    font-weight: 500;
+    line-height: 2.3vw;
+    float: left;
+}
+#header-conteudo li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1vw 0.2vw;
+}
+#header-conteudo li a:hover {
+    color: var(--branco);
+    cursor: pointer;
+}
+.peca-uma-avaliacao {
+    padding: 0.4vw 2vw;
+    margin-bottom: 0.2vw;
+    font-family: "poppins";
+    font-size: 1vw;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    background-color: var(--branco);
+    float: right;
+    border-radius: 0.3vw;
+}
+
+.peca-uma-avaliacao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+}
+
+/* PRIMEIRA SEÇÃO - BANNER */
+.site-conteudo-banner {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background: url(img/Banner_v1.png) no-repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.esquerdo {
+    width: 48%;
+    height: 48vw;
+    align-content: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 3vw 2vw;
+}
+.esquerdo h1 {
+    font-size: 2.3vw;
+    font-family: "poppins";
+    font-weight: 700;
+    margin-bottom: 3vw;
+}
+.esquerdo .alternador-texto {
+    display: inline-block;
+    animation: alternarSuave 20s ease-in-out infinite;
+    animation-delay: 2s;
+}
+.gradiente-texto {
+    /*para usar o linear-gradient é preciso usar no background e trazer para a fonte */
+    background: linear-gradient(to right, var(--cor-terciaria), var(--cor-quartenaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Para Firefox */
+    color: transparent; /* Segurança extra */
+}
+.esquerdo .alternador-wrapper {
+    display: inline-block;
+    height: 1.4em; /* altura de uma linha de texto (ajuste se necessário) */
+    overflow: hidden;
+    vertical-align: bottom;
+    position: relative;
+    margin: 0px 0px;
+}
+.alternador-texto span {
+    display: block;
+    height: 1.4em;
+}
+
+@keyframes alternarSuave {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-1.4em);
+    }
+    40% {
+        transform: translateY(-2.8em);
+    }
+    60% {
+        transform: translateY(-4.2em);
+    }
+    80% {
+        transform: translateY(-5.6em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.esquerdo .descritivo {
+    font-size: 1vw;
+    margin: 3vw 0vw 3vw 0vw;
+    font-family: "sora";
+    font-weight: 400;
+    color: var(--cor-terciaria);
+}
+.esquerdo hr {
+    padding: 0.4vw;
+    background-color: var(--cor-terciaria);
+    width: 4vw;
+    margin-bottom: 3vw;
+}
+
+.esquerdo .subtitulo {
+    font-size: 1.2vw;
+    margin: 3vw 3vw 1vw 0vw;
+    font-family: "sora";
+    line-height: 2vw;
+}
+.link-formulario {
+    margin: 2vw 2vw;
+    padding: 1vw 2vw;
+    border-radius: 0.3vw;
+    background-color: var(--branco);
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: "poppins";
+    color: var(--cor-primaria);
+}
+.link-formulario:hover {
+    margin: 2vw 2vw;
+    padding: 1vw 2vw;
+    border-radius: 0.3vw;
+    background-color: var(--cor-primaria);
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: "poppins";
+    color: var(--branco);
+}
+.direito {
+    width: 48%;
+}
+/* Mira em cruz 
+.mira-cruz {
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    animation: moverMira 10s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.mira-cruz::before,
+.mira-cruz::after {
+    content: "";
+    position: absolute;
+    background-color: var(--cor-terciaria);
+}
+
+/* Linha vertical 
+.mira-cruz::before {
+    width: 0.4vw;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+/* Linha horizontal 
+.mira-cruz::after {
+    height: 0.4vw;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+/* Animação em S 
+@keyframes moverMira {
+    0% {
+        transform: translate(30vw, 30vw);
+    }
+    25% {
+        transform: translate(20vw, 20vw);
+    }
+    50% {
+        transform: translate(8vw, 20vw);
+    }
+    75% {
+        transform: translate(20vw, 5vw);
+    }
+    100% {
+        transform: translate(30vw, 30vw);
+    }
+
+}
+*/
+.background {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* NOSSOS SERVIÇOS */
+
+.titulo-secao {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+}
+
+h2 {
+    color: white;
+    font-size: 4vw;
+}
+
+.subtitulo-secao {
+    color: white;
+    font-size: 1.5vw;
+}
+.nossos-servicos {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nossos-servicos h3 {
+    color: white;
+    font-size: 2vw;
+    padding: 2vw 0vw;
+    text-align: center;
+}
+
+.esquerdo-conteudo {
+    width: 50%;
+    height: 53vw;
+    box-sizing: border-box;
+    padding: 3vw 2vw;
+    align-content: center;
+    text-align-last: center;
+}
+.direito-conteudo {
+    width: 50%;
+    box-sizing: border-box;
+    align-content: center;
+    text-align-last: center;
+    padding: 3vw 2vw;
+    height: 53vw;
+}
+.nossos-servicos p {
+    padding: 2vw 1vw;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+.img-nossos-servicos {
+    width: 100%;
+}
+.orientação-normal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.orientação-invertida {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+article {
+    margin-bottom: 4vw;
+}
+
+/*FORMULÁRIO PARTE FINAL */
+.titulo-secao-form {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
+    color: white;
+}
+.titulo-secao-form h2 {
+    padding-bottom: 0.3vw;
+}
+.formulario-img {
+    background: url(img/Slide_v1.png) center;
+    background-size: cover;
+    height: 34vw;
+}
+.formulario {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    color: white;
+    font-size: 1.5vw;
+}
+.formulario input,
+select {
+    font-size: 1.5vw;
+}
+.form-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.formulario .nome label {
+    width: 21%;
+}
+.formulario .nome input {
+    width: 79%;
+}
+
+.nome {
+    flex: 2;
+    flex-wrap: nowrap;
+    display: flex;
+}
+.formulario .empresa label {
+    width: 50%;
+}
+.formulario .empresa input {
+    width: 46%;
+}
+
+.empresa {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.empresa {
+    flex: 1;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+fieldset.linha {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 1vw 0.3vw;
+}
+.form-box .telefone label {
+    width: 42%;
+}
+.form-box .telefone input {
+    width: 58%;
+}
+
+.telefone {
+    flex: 1;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.botao-form {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2vw;
+}
+
+.botao-form input:hover {
+    color: white;
+    background-color: var(--cor-primaria);
+}
+
+form {
+    margin: 0 auto;
+    width: 100%;
+}
