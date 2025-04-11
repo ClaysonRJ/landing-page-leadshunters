@@ -1,4 +1,4 @@
-# 🚀 Landing Page - Leads Hunters
+# 🚀 Landing Page - Leads Hunters - (EM DESENVOLVIMENTO!)
 
 Bem-vindo ao repositório oficial da **Landing Page da Leads Hunters** — uma página feita com 💙 por quem entende de performance, tráfego pago e presença digital de verdade.
 
