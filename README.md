@@ -2,6 +2,7 @@
 
 Bem-vindo ao repositório oficial da **Landing Page da Leads Hunters** — uma página feita com 💙 por quem entende de performance, tráfego pago e presença digital de verdade.
 
+(OBSERVAÇÃO: Estou subindo constantes atualizações - ultima dia 11/04/2025)
 ---
 
 ## 🛠️ Tecnologias Utilizadas
