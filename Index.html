@@ -1,8 +1,28 @@
 <!doctype html>
 <html lang="pt-br">
     <head>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-PSV7RDJ7");
+        </script>
+        <!-- End Google Tag Manager -->
+
         <meta charset="UTF-8" />
         <title>Leads Hunters</title>
+
         <link rel="stylesheet" type="text/css" href="estilo.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,8 +30,41 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
             rel="stylesheet" />
         <link rel="icon" href="img/fav_icon.png" type="image/png" />
+
+        <!-- Meta Pixel Code 
+
+        DESCONTINUADO POR ESTAR DENTRO DO GTM
+            
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '674021548367066');
+            fbq('track', 'PageView');
+        </script>
+        
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=674021548367066&ev=PageView&noscript=1"/>
+        
+        </noscript>
+        
+         End Meta Pixel Code -->
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-PSV7RDJ7"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
         <header>
             <div id="header-conteudo">
                 <div id="logo">
@@ -31,9 +84,15 @@
                         <li><a href="#nossos-servicos">Nossos Serviços</a></li>
                         <li><a>Quem somos</a></li>
                         <li><a>Diferenciais</a></li>
-                        <li><a href="#formulario" >Consultoria Grátis</a></li>
+                        <li><a href="#formulario">Consultoria Grátis</a></li>
                     </ul>
-                    <input type="button" class="peca-uma-avaliacao" value="Whatsapp" onclick="scrollParaFormulario()" />
+                    <a
+                        href="https://wa.me/5531988210186?text=Quero saber mais sobre os serviços de marketing digital da Leads Hunters"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao-whatsapp">
+                        <input type="button" class="peca-uma-avaliacao" value="Whatsapp"
+                    /></a>
                 </nav>
             </div>
             <div class="clear"></div>
@@ -66,6 +125,7 @@
                         value="Agende uma conversa"
                         onclick="scrollParaFormulario()" />
                 </div>
+
                 <div class="direito">
                     <!--<div class="container">
                         <div class="mira-cruz"></div>
@@ -170,7 +230,7 @@
                     </p>
                 </div>
                 <section class="formulario">
-                    <form class="form-box" id="formulario" onsubmit="enviarFormulario">
+                    <form class="form-box" id="formulario" onsubmit="return enviarFormulario()">
                         <fieldset class="linha">
                             <div class="nome">
                                 <label for="nome">Nome</label>
